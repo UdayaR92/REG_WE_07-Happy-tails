@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+	
+    <servlet>
+    	<servlet-name>petinsert</servlet-name>
+    	<servlet-class>com.pets.PetsInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>petinsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    	<servlet-name>updatepet</servlet-name>
+    	<servlet-class>com.pets.UpdatePetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updatepet</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+    	<servlet-name>searchview</servlet-name>
+    	<servlet-class>com.pet.UpdatePetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>searchview</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
