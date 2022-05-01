@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+     <servlet>
+    	<servlet-name>victoryInsert</servlet-name>
+    	<servlet-class>com.victory.victoryInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>victoryInsert</servlet-name>
+    	<url-pattern>/victoryinsert</url-pattern>
+    </servlet-mapping>     
+    
+    <servlet>
+	     <servlet-name>victoryUpdate</servlet-name>
+	     <servlet-class>com.victory.victoryUpdateServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+        <servlet-name>victoryUpdate</servlet-name>
+        <url-pattern>/updateKobo</url-pattern>
+  	</servlet-mapping>
+  
+  	<servlet>
+	     <servlet-name>victoryDelete</servlet-name>
+	    <servlet-class>com.victory.victoryDeleteServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+        <servlet-name>victoryDelete</servlet-name>
+        <url-pattern>/deleteKobo</url-pattern>
+  	</servlet-mapping>
+         
+    <servlet>
+	     <servlet-name>victorySearch</servlet-name>
+	    <servlet-class>com.victory.victorySearchServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+        <servlet-name>victorySearch</servlet-name>
+        <url-pattern>/search</url-pattern>
+ 	 </servlet-mapping>
+  
+      <servlet>
+	     <servlet-name>victoryReport</servlet-name>
+	    <servlet-class>com.victory.victoryReportServlet</servlet-class>
+  	</servlet>
+  
+ 	 <servlet-mapping>
+        <servlet-name>victoryReport</servlet-name>
+        <url-pattern>/Kreport</url-pattern>
+ 	 </servlet-mapping>
+     
+ </web-app>
