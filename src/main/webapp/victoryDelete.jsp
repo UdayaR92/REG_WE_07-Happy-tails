@@ -134,7 +134,7 @@ try {
 
 %>
 		<div align=center id ="bor" style="background-image: url(victoryImages/allvictory.jpg);background-repeat: no-repeat;">
-	<form action="deleteKobo" id = "insertkobo" method = "post" >
+	<form action="victoryDelete" id = "insertkobo" method = "post" >
 	<h1>DELETE VICTORY LOG</h1><br/>
 	<input type="hidden" name="vlid" value="<%=resultSet.getString("vlid") %>">
 	

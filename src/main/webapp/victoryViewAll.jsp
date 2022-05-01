@@ -47,9 +47,9 @@
  
  <title> VICTORY LOGS </title>
  
- <header>	
  
-		<hr>
+ 
+		
 
 <ul class="one" position=fixed;>
 
@@ -72,13 +72,13 @@
 <div align=center id ="bor" style="background-image: url(victoryImages/victorydelete.jpg);background-repeat: no-repeat;">
 <h1>VICTORY LOGS</h1>
 	<BR>
-		<form action="search" name="frm" method="post">
+		<form action="VictorySearch" name="frm" method="post">
 		<table align="center">
 			<tr>
-			<td colspan=2 style="font-size:12pt;" align="center">
-			<td><label for="fname"><b>SEARCH VICTORY LOGS BY DATE</b></label></td>
+			<td colspan=2 style="font-size:15pt;" align="center">
+			<td><label for="fname"><b style="font-size:20px;">SEARCH VICTORY LOGS BY DATE :</b></label></td>
 			<td><input type="date" name="date"  ></td>
-			<td><input   type="submit" name="submit" value="Search" style= "background-color:red; COLOR:WHITE;"></td></tr>
+			<td><input   type="submit" name="submit" value="Search" style= "background-color:#e60000; COLOR:WHITE;width:70px;height:25px"></td></tr>
 			<br>
 		</table>
 	</form>
@@ -88,7 +88,7 @@
 	
 <table style = "background-color:white" border ="2"><br>
 
-<tr style="background-color:#0000e6;color:white;font-size:20px">
+<tr style="background-color:#000099;color:white;font-size:20px;font-style: bold">
 <th><b>Victory Log ID</b></th>
 <th><b>Coordinator Name</b></th>
 <th><b>Program Type</b></th>
@@ -115,7 +115,7 @@ try {
 	while(rs.next()){
 
 %>
-<tr style="background-color:#e6e6ff;color:black;font-size:19px">
+<tr style="background-color:#e6e6ff;color:black;font-size:19px;font-style: bold">
 <td><%=rs.getString(1)%></td>
 <td ><%=rs.getString(2)%></td>
 <td ><%=rs.getString(3)%></td>
@@ -142,16 +142,16 @@ e.printStackTrace();
 </table>
  <br>
 	<a href="victoryInsert.jsp"><button  class="button button1"><b>Add Logs</b></button></a>	
-		 <br><br><br>
+		 <br><br>
 <br>
-	<form action="victoryPDF.jsp " method="post">	
+	<form action="victoryPDF.jsp " method="post"  >	
 		
-     Generate Annual Report   :<input type = "text" name ="Year" id ="Year" placeholder = "Year"   required>
+    <b style="font-size:20px;">Generate Annual Report :</b><input type = "text" name ="Year" id ="Year" placeholder = "Year"   required>
          <br><br>   
-          <input style ="background-color:red; COLOR:WHITE;" type="submit" value="Genarate" >  
+          <input style= "background-color:#e60000; COLOR:WHITE;width:80px;height:30px" type="submit" value="Genarate" >  
   </form>
 <br><br>
-Download All Victory Logs.csv <br><a href="Kreport"><button style= "background-color:red; COLOR:WHITE;" ><b>Print</b></button></a>
+<b style="font-size:20px;">Generate All Victory Logs.Csv</b> <br><a href="VictoryReport"><button style= "background-color:#e60000; COLOR:WHITE;width:80px;height:30px" ><b>Print</b></button></a>
 <br><br><br><br><br>
 
 
