@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class insert kobo
  */
-@WebServlet("/Signup")
+@WebServlet("/victoryInsertServlet")
 public class victoryInsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

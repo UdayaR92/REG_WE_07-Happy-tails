@@ -133,7 +133,7 @@ try {
 
 %>
 	<div align=center id ="bor" style="background-image: url(victoryImages/victoryupdate.jpg);background-repeat: no-repeat;" >
-	<form action="updateKobo" id = "insertkobo" method = "post" >
+	<form action="victoryUpdate" id = "insertkobo" method = "post" >
 	<h1>UPDATE VICTORY LOG</h1><br/>
 	<input type="hidden" name="vlid" value="<%=resultSet.getString("vlid") %>">
 	

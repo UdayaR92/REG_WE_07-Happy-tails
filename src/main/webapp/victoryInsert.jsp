@@ -129,7 +129,7 @@ try {
 %>
 	
 	<div align=center id ="bor"  style="background-image: url(victoryImages/vivtoryinsert.jpg);background-repeat: no-repeat; " >
-	<form  action="victoryinsert" id = "insertkobo" method = "post" >
+	<form  action="victoryInsert" id = "insertkobo" method = "post" >
 	<h1>ADD VICTORY LOGS</h1><br/>
 	
 	<!-- user inputs -->

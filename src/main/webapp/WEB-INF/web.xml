@@ -12,7 +12,7 @@
     </servlet>
     <servlet-mapping>
     	<servlet-name>victoryInsert</servlet-name>
-    	<url-pattern>/victoryinsert</url-pattern>
+    	<url-pattern>/victoryInsert</url-pattern>
     </servlet-mapping>     
     
     <servlet>
@@ -21,7 +21,7 @@
   	</servlet>
   	<servlet-mapping>
         <servlet-name>victoryUpdate</servlet-name>
-        <url-pattern>/updateKobo</url-pattern>
+        <url-pattern>/victoryUpdate</url-pattern>
   	</servlet-mapping>
   
   	<servlet>
@@ -30,7 +30,7 @@
   	</servlet>
   	<servlet-mapping>
         <servlet-name>victoryDelete</servlet-name>
-        <url-pattern>/deleteKobo</url-pattern>
+        <url-pattern>/victoryDelete</url-pattern>
   	</servlet-mapping>
          
     <servlet>
@@ -39,7 +39,7 @@
   	</servlet>
   	<servlet-mapping>
         <servlet-name>victorySearch</servlet-name>
-        <url-pattern>/search</url-pattern>
+        <url-pattern>/VictorySearch</url-pattern>
  	 </servlet-mapping>
   
       <servlet>
@@ -49,7 +49,7 @@
   
  	 <servlet-mapping>
         <servlet-name>victoryReport</servlet-name>
-        <url-pattern>/Kreport</url-pattern>
+        <url-pattern>/VictoryReport</url-pattern>
  	 </servlet-mapping>
      
  </web-app>
